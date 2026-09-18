@@ -34,7 +34,7 @@ async function deleteFile(){
 
 }
 async function main() {
-  await createFile("Hello World");
+  await createFile("Hello World /n new file");
   await readFile();
   await deleteFile() ;
 }

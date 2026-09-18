@@ -243,7 +243,7 @@ const server = http.createServer((req, res) => {
     else if (url.startsWith("/users/") && method === "GET") {
 
          console.log("USERS ID ROUTE ENTERED");
-         
+
         const id = Number(url.split("/")[2]);
 
         console.log(id);
@@ -302,6 +302,38 @@ const server = http.createServer((req, res) => {
 
         });
     }
+
+    // else if(url.startsWith("/delte/") && method =="DELETE"){
+    //     const id = url.split("/")[2] ;
+    //     const index = userdata.findIndex((u) => u.id == id) ;
+    //     if(index== -1){
+    //         return res.end("elemnt not found") ;
+    //     }
+
+    //     userdata.splice(index,1) ;
+    //     res.end("user delted successfully")  ;
+    // }
+    
+
+    else if (url.startsWith("/delete/") && method === "DELETE") {
+
+    const id = Number(url.split("/")[2]);
+
+    const index = userdata.findIndex((u) => u.id === id);
+
+    if (index === -1) {
+        res.statusCode = 404;
+        return res.end("User not found");
+    }
+
+    userdata.splice(index, 1);
+
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/plain");
+
+    res.end("User deleted successfully");
+}
+else if(url.startsWith("/put") && method ==="")
 
 
     
