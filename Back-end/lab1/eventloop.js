@@ -1,4 +1,4 @@
-console.log("this is stariting point of my code") ;
+''''console.log("this is stariting point of my code") ;
 // ascychronus
 process.nextTick(() => {
     console.log("this is process.nextTick operstion") ;

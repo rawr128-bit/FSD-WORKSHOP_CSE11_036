@@ -1,127 +1,127 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import sunset from './assets/sunset.jpg'
-import './App.css'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
+// import heroImg from './assets/hero.png'
+// import sunset from './assets/sunset.jpg'
+// import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// function App() {
+//   const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-          <img src={sunset} className="suntet" alt="added" height={100} width={100}></img>
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+//   return (
+//     <>
+//       <section id="center">
+//         <div className="hero">
+//           <img src={heroImg} className="base" width="170" height="179" alt="" />
+//           <img src={reactLogo} className="framework" alt="React logo" />
+//           <img src={viteLogo} className="vite" alt="Vite logo" />
+//           <img src={sunset} className="suntet" alt="added" height={100} width={100}></img>
+//         </div>
+//         <div>
+//           <h1>Get started</h1>
+//           <p>
+//             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+//           </p>
+//         </div>
+//         <button
+//           type="button"
+//           className="counter"
+//           onClick={() => setCount((count) => count + 1)}
+//         >
+//           Count is {count}
+//         </button>
+//       </section>
 
-      <div className="ticks"></div>
+//       <div className="ticks"></div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+//       <section id="next-steps">
+//         <div id="docs">
+//           <svg className="icon" role="presentation" aria-hidden="true">
+//             <use href="/icons.svg#documentation-icon"></use>
+//           </svg>
+//           <h2>Documentation</h2>
+//           <p>Your questions, answered</p>
+//           <ul>
+//             <li>
+//               <a href="https://vite.dev/" target="_blank">
+//                 <img className="logo" src={viteLogo} alt="" />
+//                 Explore Vite
+//               </a>
+//             </li>
+//             <li>
+//               <a href="https://react.dev/" target="_blank">
+//                 <img className="button-icon" src={reactLogo} alt="" />
+//                 Learn more
+//               </a>
+//             </li>
+//           </ul>
+//         </div>
+//         <div id="social">
+//           <svg className="icon" role="presentation" aria-hidden="true">
+//             <use href="/icons.svg#social-icon"></use>
+//           </svg>
+//           <h2>Connect with us</h2>
+//           <p>Join the Vite community</p>
+//           <ul>
+//             <li>
+//               <a href="https://github.com/vitejs/vite" target="_blank">
+//                 <svg
+//                   className="button-icon"
+//                   role="presentation"
+//                   aria-hidden="true"
+//                 >
+//                   <use href="/icons.svg#github-icon"></use>
+//                 </svg>
+//                 GitHub
+//               </a>
+//             </li>
+//             <li>
+//               <a href="https://chat.vite.dev/" target="_blank">
+//                 <svg
+//                   className="button-icon"
+//                   role="presentation"
+//                   aria-hidden="true"
+//                 >
+//                   <use href="/icons.svg#discord-icon"></use>
+//                 </svg>
+//                 Discord
+//               </a>
+//             </li>
+//             <li>
+//               <a href="https://x.com/vite_js" target="_blank">
+//                 <svg
+//                   className="button-icon"
+//                   role="presentation"
+//                   aria-hidden="true"
+//                 >
+//                   <use href="/icons.svg#x-icon"></use>
+//                 </svg>
+//                 X.com
+//               </a>
+//             </li>
+//             <li>
+//               <a href="https://bsky.app/profile/vite.dev" target="_blank">
+//                 <svg
+//                   className="button-icon"
+//                   role="presentation"
+//                   aria-hidden="true"
+//                 >
+//                   <use href="/icons.svg#bluesky-icon"></use>
+//                 </svg>
+//                 Bluesky
+//               </a>
+//             </li>
+//           </ul>
+//         </div>
+//       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
-}
+//       <div className="ticks"></div>
+//       <section id="spacer"></section>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
 // import Home from './components/home.jsx'
 
 // function App() {
@@ -131,3 +131,341 @@ export default App
 // }
 
 // export default App
+
+
+
+
+
+// import { Routes, Route, Navigate } from "react-router-dom";
+
+// import Signup from "./components/Signup.jsx";
+// import Login from "./components/Login.jsx";
+// import Dashboard from "./components/Dashboard.jsx";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+
+//       <Route
+//         path="/signup"
+//         element={<Signup />}
+//       />
+
+//       <Route
+//         path="/login"
+//         element={<Login />}
+//       />
+
+//       <Route
+//         path="/dashboard"
+//         element={<Dashboard />}
+//       />
+
+//       <Route
+//         path="/api-tester"
+//         element={<ApiTester />}
+//       />
+
+//       {/* If URL doesn't match anything */}
+//       <Route
+//         path="*"
+//         element={<Navigate to="/signup" />}
+//       />
+
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>React is working</h1>
+//       <p>This is the App component.</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// import { Routes, Route, Navigate } from "react-router-dom";
+
+// import Signup from "./components/Signup.jsx";
+// import Login from "./components/Login.jsx";
+// import Dashboard from "./components/Dashboard.jsx";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/signup" element={<Signup />} />
+
+//       <Route path="/login" element={<Login />} />
+
+//       <Route path="/dashboard" element={<Dashboard />} />
+
+//       <Route path="/api-tester" element={<ApiTester />} />
+
+//       <Route
+//         path="*"
+//         element={<Navigate to="/signup" />}
+//       />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+// import { Routes, Route } from "react-router-dom";
+// import Signup from "./components/Signup.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/signup" element={<Signup />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// import Signup from "./components/signup.jsx";
+// import Login from "./components/login.jsx";
+// import Dashboard from "./components/dashboard.jsx";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/signup" element={<Signup />} />
+//       <Route path="/login" element={<Login />} />
+//       <Route path="/dashboard" element={<Dashboard />} />
+//       <Route path="/api-tester" element={<ApiTester />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// import Signup from "./components/signup.jsx";
+// import Login from "./components/login.jsx";
+// import Dashboard from "./components/dashboard.jsx";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Signup />} />
+
+//       <Route path="/signup" element={<Signup />} />
+//       <Route path="/login" element={<Login />} />
+//       <Route path="/dashboard" element={<Dashboard />} />
+//       <Route path="/api-tester" element={<ApiTester />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+// import { Routes, Route } from "react-router-dom";
+// import Signup from "./components/signup.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Signup />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// import Signup from "./components/signup.jsx";
+// import Login from "./components/login.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Signup />} />
+//       <Route path="/signup" element={<Signup />} />
+//       <Route path="/login" element={<Login />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// import Signup from "./components/signup.jsx";
+// import Login from "./components/login.jsx";
+// import Dashboard from "./components/dashboard.jsx";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+
+//       <Route path="/" element={<Signup />} />
+
+//       <Route path="/signup" element={<Signup />} />
+
+//       <Route path="/login" element={<Login />} />
+
+//       <Route path="/dashboard" element={<Dashboard />} />
+
+//       <Route path="/api-tester" element={<ApiTester />} />
+
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// import Signup from "./components/signup.jsx";
+// import Dashboard from "./components/dashboard.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Signup />} />
+//       <Route path="/signup" element={<Signup />} />
+//       <Route path="/dashboard" element={<Dashboard />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// import Dashboard from "./components/dashboard.jsx";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route path="/dashboard" element={<Dashboard />} />
+//       <Route path="/api-tester" element={<ApiTester />} />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// import { Routes, Route } from "react-router-dom";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route
+//         path="*"
+//         element={
+//           <div>
+//             <h1>ROUTER IS WORKING</h1>
+//           </div>
+//         }
+//       />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+// import { Routes, Route } from "react-router-dom";
+// import ApiTester from "./components/api_tester.jsx";
+
+// function App() {
+//   return (
+//     <Routes>
+//       <Route
+//         path="/api-tester"
+//         element={<ApiTester />}
+//       />
+//     </Routes>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+import { Routes, Route } from "react-router-dom";
+
+import Signup from "./components/signup.jsx";
+import Login from "./components/login.jsx";
+import Dashboard from "./components/dashboard.jsx";
+import ApiTester from "./components/api_tester.jsx";
+
+function App() {
+  return (
+    <Routes>
+
+      {/* Signup */}
+      <Route
+        path="/"
+        element={<Signup />}
+      />
+
+      <Route
+        path="/signup"
+        element={<Signup />}
+      />
+
+      {/* Login */}
+      <Route
+        path="/login"
+        element={<Login />}
+      />
+
+      {/* Dashboard */}
+      <Route
+        path="/dashboard"
+        element={<Dashboard />}
+      />
+
+      {/* API Tester */}
+      <Route
+        path="/api-tester"
+        element={<ApiTester />}
+      />
+
+    </Routes>
+  );
+}
+
+export default App;
